@@ -1,7 +1,7 @@
 const { performance } = require('perf_hooks');
 const writeFile = require('../utils/write-file');
 const showMemoryUsage = require('../utils/show-memory-usage');
-const list = require('../utils/random-list.json');
+const list = require('../lists/phone-number-list.json');
 
 (async () => {
   const selectionSort = (inputArr) => {
@@ -32,5 +32,5 @@ const list = require('../utils/random-list.json');
   console.log(`Time spent: ${totalTime} ms`);
   showMemoryUsage();
 
-  writeFile('sorted.json', list);
+  writeFile('sorted-list.json', list);
 })();

@@ -1,6 +1,6 @@
 const { performance } = require('perf_hooks');
 const showMemoryUsage = require('../utils/show-memory-usage');
-const sortedList = require('../utils/sorted.json');
+const sortedList = require('../lists/sorted-list.json');
 
 (async () => {
   function binarySearch(arr, element) {

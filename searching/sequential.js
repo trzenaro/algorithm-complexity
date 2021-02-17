@@ -1,6 +1,6 @@
 const { performance } = require('perf_hooks');
 const showMemoryUsage = require('../utils/show-memory-usage');
-const list = require('../utils/sorted.json');
+const list = require('../lists/phone-number-list.json');
 
 (async () => {
   function sequentialSearch(arr, element) {
